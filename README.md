@@ -1,105 +1,128 @@
-📄 Website Sections
-👩‍💻 About Me
+# 🌐 Vennela Raghava Konduru | Personal Portfolio
 
-🛠 Technical Skills
+Welcome to my personal portfolio website! This portfolio showcases my technical skills, internship experience, featured projects, certifications, achievements, and education. It is designed with a modern dark-themed interface, responsive layouts, and interactive animations.
 
-💼 Internship Experience
+🌍 **Live Website:** https://vennelakonduru.github.io/my-protoffolio/
 
-📂 Key Projects
+---
 
-🏆 Certifications
+## 📖 About
 
-🎖 Achievements
+This portfolio reflects my journey as a **Computer Science undergraduate** passionate about **Software Engineering, Artificial Intelligence, Cloud Computing, and Web Development**. It serves as a central place where recruiters and developers can explore my work, technical expertise, projects, and professional achievements.
 
-🎓 Education
+---
 
-📞 Contact
+## ✨ Features
 
-⭐ Featured Projects
-🛡️ SentinelNet – AI-Powered Network Intrusion Detection System
-Python, Flask, Machine Learning, Scikit-learn, REST APIs
+- 👩‍💻 Professional About Me section
+- 🛠️ Technical Skills categorized by domain
+- 💼 Internship Experience
+- 📂 Featured Projects
+- 🏆 Certifications & Credentials
+- 🎖️ Achievements & Education
+- 📞 Contact Form powered by Web3Forms
+- 🌙 Modern Dark UI
+- 📱 Fully Responsive Design
+- ✨ Smooth Scroll Animations
+- 🎯 Active Navigation Highlighting
 
-Real-time network traffic analysis and cyberattack prediction.
+---
 
-🍽️ Online Canteen Ordering App
-Design Thinking, User-Centered Design
+## 🛠️ Tech Stack
 
-Digital workflow solution to streamline food ordering in colleges.
+### Languages
+- HTML5
+- CSS3
+- JavaScript (ES6)
 
-📚 Student Knowledge Assessment Portal
-HTML, CSS, JavaScript
+### Styling
+- CSS Variables
+- Flexbox
+- CSS Grid
+- Responsive Design
 
-Web-based quiz platform with automated real-time scoring.
+### APIs & Technologies
+- Fetch API
+- Intersection Observer API
+- Web3Forms API
 
-🏦 Bank Transaction Management System
-Python, Object-Oriented Programming (OOP)
+### Deployment
+- GitHub Pages
 
-Secure console application managing accounts, deposits, and transaction logs.
+---
 
-📬 Contact
-Vennela Raghava Konduru
+## 📂 Project Structure
 
-📧 Email: vennelakonduru93@gmail.com
+```text
+my-protoffolio/
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+```
 
-💻 GitHub: github.com/vennelakonduru
+---
 
-🔗 LinkedIn: linkedin.com/in/vennelaraghavakonduru
+## 📑 Portfolio Sections
 
-🧩 LeetCode: leetcode.com/u/K-VennelaRaghava
+- 👩‍💻 About Me
+- 🛠️ Technical Skills
+- 💼 Internship Experience
+- 📂 Key Projects
+- 🏆 Certifications
+- 🎖️ Achievements
+- 🎓 Education
+- 📞 Contact
 
-📜 License
-This project is open source and available under the MIT License.
+---
 
-⭐ If you like this project, feel free to give it a star!📄 Website Sections
-👩‍💻 About Me
+## 🚀 Featured Projects
 
-🛠 Technical Skills
+### 🛡️ SentinelNet – AI-Powered Network Intrusion Detection System
+**Tech Stack:** Python, Flask, Machine Learning, Scikit-learn, REST APIs
 
-💼 Internship Experience
+- AI-powered intrusion detection for identifying malicious network traffic.
+- Built using Flask with REST APIs and machine learning models.
+- Performs real-time network traffic analysis and cyberattack prediction.
 
-📂 Key Projects
+### 🍽️ Online Canteen Ordering App
+**Tech Stack:** Design Thinking, User-Centered Design
 
-🏆 Certifications
+- Designed a digital pre-ordering solution for college canteens.
+- Focused on improving user experience and reducing waiting time.
 
-🎖 Achievements
+### 📚 Student Knowledge Assessment Portal
+**Tech Stack:** HTML, CSS, JavaScript
 
-🎓 Education
+- Responsive web-based quiz platform.
+- Supports automated evaluation and real-time score calculation.
 
-📞 Contact
+### 🏦 Bank Transaction Management System
+**Tech Stack:** Python, Object-Oriented Programming (OOP)
 
-⭐ Featured Projects
-🛡️ SentinelNet – AI-Powered Network Intrusion Detection System
-Python, Flask, Machine Learning, Scikit-learn, REST APIs
+- Console-based banking application.
+- Supports account management, deposits, withdrawals, and transaction history.
 
-Real-time network traffic analysis and cyberattack prediction.
+---
 
-🍽️ Online Canteen Ordering App
-Design Thinking, User-Centered Design
+## 📬 Contact
 
-Digital workflow solution to streamline food ordering in colleges.
+**Vennela Raghava Konduru**
 
-📚 Student Knowledge Assessment Portal
-HTML, CSS, JavaScript
+📧 **Email:** vennelakonduru93@gmail.com
 
-Web-based quiz platform with automated real-time scoring.
+💻 **GitHub:** https://github.com/vennelakonduru
 
-🏦 Bank Transaction Management System
-Python, Object-Oriented Programming (OOP)
+💼 **LinkedIn:** https://linkedin.com/in/vennelaraghavakonduru
 
-Secure console application managing accounts, deposits, and transaction logs.
+🧩 **LeetCode:** https://leetcode.com/u/K-VennelaRaghava
 
-📬 Contact
-Vennela Raghava Konduru
+---
 
-📧 Email: vennelakonduru93@gmail.com
+## 📄 License
 
-💻 GitHub: github.com/vennelakonduru
+This project is licensed under the **MIT License**.
 
-🔗 LinkedIn: linkedin.com/in/vennelaraghavakonduru
+---
 
-🧩 LeetCode: leetcode.com/u/K-VennelaRaghava
-
-📜 License
-This project is open source and available under the MIT License.
-
-⭐ If you like this project, feel free to give it a star!
+⭐ If you found this project helpful, consider giving it a **Star** on GitHub!
