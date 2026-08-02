@@ -257,8 +257,8 @@
           <p>I’m open to internships, collaborations, hackathons, and software projects in web, cloud, or AI. Reach out if you want to discuss an opportunity.</p>
         </div>
         <div class="contact-form-card">
-          <form action="https://api.web3forms.com/submit" method="POST">
-            <!-- Free Web3Forms Key linked to your email -->
+          <form id="contact-form">
+            <!-- Replace with your actual Web3Forms Key from web3forms.com -->
             <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
 
             <div class="form-group">
@@ -273,8 +273,11 @@
               <label>Message</label>
               <textarea name="message" rows="4" placeholder="Tell me about your project" required></textarea>
             </div>
-            <button type="submit" class="submit-btn">Send Message</button>
+            <button type="submit" id="submit-btn" class="submit-btn">Send Message</button>
           </form>
+          
+          <!-- DARK THEME SUCCESS NOTIFICATION -->
+          <div id="form-status" class="form-status"></div>
         </div>
       </div>
     </section>
