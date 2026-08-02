@@ -4,11 +4,11 @@
   --card-border: #1e293b;
   --primary-purple: #a855f7;
   --secondary-blue: #38bdf8;
-  --accent-cyan: #38bdf8;
   --btn-gradient: linear-gradient(90deg, #60a5fa, #34d399);
   --text-main: #f3f4f6;
   --text-muted: #9ca3af;
   --input-bg: #1a2332;
+  --accent-green: #10b981;
 }
 
 * {
@@ -63,8 +63,9 @@ body {
   transition: color 0.2s ease;
 }
 
-.nav-links a:hover {
-  color: var(--text-main);
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--primary-purple);
 }
 
 /* MAIN CONTAINER */
@@ -82,6 +83,14 @@ header {
   border-radius: 12px;
   border: 1px solid var(--card-border);
   margin-bottom: 30px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+header.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 h1 {
@@ -121,6 +130,14 @@ section {
   border-radius: 12px;
   padding: 30px;
   margin-bottom: 30px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 h2 {
@@ -133,6 +150,19 @@ h2 {
 
 .muted-text {
   color: var(--text-muted);
+}
+
+.highlight-green {
+  color: var(--accent-green);
+}
+
+.link-text {
+  color: var(--secondary-blue);
+  text-decoration: none;
+}
+
+.link-text:hover {
+  text-decoration: underline;
 }
 
 /* SKILLS */
@@ -162,13 +192,17 @@ h2 {
 }
 
 .tag.green {
-  border-color: #10b981;
-  color: #10b981;
+  border-color: var(--accent-green);
+  color: var(--accent-green);
 }
 
 /* CARDS & ITEMS */
 .item-card {
   margin-bottom: 20px;
+}
+
+.item-card:last-child {
+  margin-bottom: 0;
 }
 
 .item-header {
@@ -185,10 +219,11 @@ h2 {
 .item-sub {
   color: var(--secondary-blue);
   font-size: 0.9rem;
+  margin-top: 2px;
 }
 
 .item-date {
-  color: #10b981;
+  color: var(--accent-green);
   font-size: 0.85rem;
   font-weight: 600;
 }
@@ -197,6 +232,10 @@ ul {
   margin-left: 20px;
   margin-top: 8px;
   color: var(--text-muted);
+}
+
+li {
+  margin-bottom: 5px;
 }
 
 /* CERTIFICATIONS GRID */
@@ -216,15 +255,16 @@ ul {
 .cert-box h3 {
   font-size: 0.95rem;
   color: var(--text-main);
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .cert-box p {
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   color: var(--text-muted);
+  line-height: 1.5;
 }
 
-/* CONTACT SECTION (2-COLUMN MATCHING PICTURE 2) */
+/* CONTACT LAYOUT (2-COLUMN) */
 .contact-layout {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
