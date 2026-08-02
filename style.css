@@ -1,224 +1,58 @@
-:root {
-  --bg-color: #0a0d14;
-  --card-bg: #121721;
-  --card-border: #1e293b;
-  --primary-purple: #a855f7;
-  --secondary-blue: #38bdf8;
-  --accent-green: #10b981;
-  --text-main: #f3f4f6;
-  --text-muted: #9ca3af;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body {
-  background-color: var(--bg-color);
-  color: var(--text-main);
-  line-height: 1.6;
-  padding: 20px;
-}
-
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-header {
-  text-align: center;
-  padding: 40px 20px;
+/* Navigation Bar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   background: var(--card-bg);
-  border-radius: 12px;
-  border: 1px solid var(--card-border);
-  margin-bottom: 30px;
-  opacity: 0;
-  transform: translateY(-20px);
-  transition: opacity 1s ease, transform 1s ease;
+  border-bottom: 1px solid var(--card-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  margin-bottom: 20px;
 }
 
-header.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-h1 {
-  font-size: 2.5rem;
-  color: var(--text-main);
-  margin-bottom: 10px;
-}
-
-.subtitle {
+.nav-logo {
   font-size: 1.2rem;
+  font-weight: bold;
   color: var(--primary-purple);
-  font-weight: 600;
-  margin-bottom: 15px;
 }
 
-.contact-info {
-  color: var(--text-muted);
-  font-size: 0.95rem;
-  margin-bottom: 15px;
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
 }
 
-.links a {
-  color: var(--secondary-blue);
+.nav-links a {
+  color: var(--text-main);
   text-decoration: none;
-  margin: 0 10px;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
-.links a:hover {
-  color: var(--primary-purple);
-  text-decoration: underline;
-}
-
-section {
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  border-radius: 12px;
-  padding: 25px;
-  margin-bottom: 25px;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-section.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-h2 {
-  font-size: 1.5rem;
-  color: var(--primary-purple);
-  border-bottom: 2px solid var(--card-border);
-  padding-bottom: 8px;
-  margin-bottom: 20px;
-}
-
-.muted-text {
-  color: var(--text-muted);
-}
-
-.highlight-green {
-  color: var(--accent-green);
-}
-
-.skill-category {
-  margin-bottom: 15px;
-}
-
-.skill-title {
-  font-weight: bold;
+.nav-links a:hover {
   color: var(--secondary-blue);
 }
 
-.tag-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 8px;
-}
-
-.tag {
-  background: #1e293b;
-  color: var(--text-main);
-  padding: 4px 12px;
-  border-radius: 6px;
-  font-size: 0.85rem;
-  border: 1px solid #334155;
-  transition: transform 0.2s ease;
-}
-
-.tag:hover {
-  transform: translateY(-2px);
-}
-
-.tag.green {
-  border-color: var(--accent-green);
-  color: var(--accent-green);
-}
-
-.item-card {
-  margin-bottom: 20px;
-}
-
-.item-card:last-child {
-  margin-bottom: 0;
-}
-
-.item-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  flex-wrap: wrap;
-}
-
-.item-title {
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: var(--text-main);
-}
-
-.item-sub {
-  color: var(--secondary-blue);
-  font-size: 0.95rem;
-}
-
-.item-date {
-  color: var(--accent-green);
-  font-size: 0.85rem;
-  font-weight: bold;
-}
-
-ul {
-  margin-left: 20px;
-  margin-top: 8px;
-  color: var(--text-muted);
-}
-
-li {
-  margin-bottom: 5px;
-}
-
-.cert-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 15px;
-}
-
-.cert-box {
+/* Contact Styling */
+.contact-box {
   background: #18202c;
-  padding: 15px;
-  border-radius: 8px;
-  border-left: 4px solid var(--primary-purple);
-  transition: transform 0.3s ease, border-color 0.3s ease;
-}
-
-.cert-box:hover {
-  transform: translateY(-3px);
-  border-left-color: var(--secondary-blue);
-}
-
-.cert-box h3 {
-  font-size: 1rem;
-  color: var(--text-main);
-  margin-bottom: 5px;
-}
-
-.cert-box p {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-}
-
-footer {
-  text-align: center;
   padding: 20px;
-  color: var(--text-muted);
-  font-size: 0.85rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--secondary-blue);
+}
+
+.contact-box p {
+  margin-bottom: 8px;
+  color: var(--text-main);
+}
+
+.link-text {
+  color: var(--secondary-blue);
+  text-decoration: none;
+}
+
+.link-text:hover {
+  text-decoration: underline;
 }
