@@ -1,18 +1,18 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // 1. Fade in the header on initial page load
+  // Fade in header on load
   const header = document.getElementById('main-header');
   if (header) {
     header.classList.add('visible');
   }
 
-  // 2. Scroll Reveal Observer for Sections
+  // Scroll Reveal Observer for Sections
   const sections = document.querySelectorAll('section');
   const sectionObserver = new IntersectionObserver(
     (entries, observer) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
-          observer.unobserve(entry.target); // Animate only once
+          observer.unobserve(entry.target);
         }
       });
     },
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
     sectionObserver.observe(section);
   });
 
-  // 3. Navbar Smooth Scroll Active Link Highlight
+  // Active Link Highlight on Scroll
   const navLinks = document.querySelectorAll('.nav-links a');
   
   window.addEventListener('scroll', () => {
@@ -31,8 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     sections.forEach(section => {
       const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight;
-      if (pageYOffset >= sectionTop - 100) {
+      if (window.pageYOffset >= sectionTop - 120) {
         current = section.getAttribute('id');
       }
     });
